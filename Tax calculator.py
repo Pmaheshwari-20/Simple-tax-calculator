@@ -1,4 +1,4 @@
-import time, sys
+import time
 
 first_tax_rate= 0.12
 Second_tax_rate= .18
@@ -44,5 +44,5 @@ Income_inhand = Income - Tax_calculated - TDS_amount
 print(f"Total income in hand after taxes:{Income_inhand:,.2f}")
 et = time.perf_counter()
 tt = et - st
-print(f"Program execution time:,{tt:2f} seconds")
-print("Memory utilized",sys.getsizeof(mobius(n)),"Bytes")
+print(f"Program execution time:,{tt:,.2f} seconds")
+
