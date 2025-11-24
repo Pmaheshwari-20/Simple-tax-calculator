@@ -1,10 +1,14 @@
+import time, sys
+
 first_tax_rate= 0.12
 Second_tax_rate= .18
 third_tax_rate= .28
 no_tax_rate= 0
+st = time.perf_counter()
 Income= float(input("Please enter your income for tax to be calculated: "))
 TDS= float(input("Enter if TDS paid"))
 TDS_rate= 0.10
+
 
 if Income <= 1200000.00:
  tax_rate = no_tax_rate
@@ -36,4 +40,9 @@ if TDS >= 0:
 
 
 Income_inhand = Income - Tax_calculated - TDS_amount
+
 print(f"Total income in hand after taxes:{Income_inhand:,.2f}")
+et = time.perf_counter()
+tt = et - st
+print(f"Program execution time:,{tt:2f} seconds")
+print("Memory utilized",sys.getsizeof(mobius(n)),"Bytes")
