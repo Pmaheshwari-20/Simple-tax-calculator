@@ -6,7 +6,7 @@ third_tax_rate= .28
 no_tax_rate= 0
 st = time.perf_counter()
 Income= float(input("Please enter your income for tax to be calculated: "))
-TDS= float(input("Enter if TDS paid"))
+TDS= float(input("Enter if TDS paid: "))
 TDS_rate= 0.10
 
 
@@ -45,4 +45,5 @@ print(f"Total income in hand after taxes:{Income_inhand:,.2f}")
 et = time.perf_counter()
 tt = et - st
 print(f"Program execution time:,{tt:,.2f} seconds")
+
 
